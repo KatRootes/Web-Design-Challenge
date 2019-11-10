@@ -52,22 +52,20 @@
     height:auto;
 }
 
-#MainGraph {
-    float: left;
-    max-width:100%;
+.mainVisual {
+    width:600px;
     height:auto;
+    float:left;
 }
 
-#MainInformation {
-    float: right;
+.visualizationView {
+    width:100%;
+    height: auto;
 }
 
-.clearfix::after {
-    content:"";
-    display:block;
-    clear:both;
+.summary {
+    font-size: 20px;
 }
-
 
 /* START:  This section uses modified sample code from https://www.w3schools.com/howto/howto_css_dropdown.asp */
 /* The container <div> - needed to position the dropdown content */

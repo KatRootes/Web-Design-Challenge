@@ -15,7 +15,7 @@
 
   <body>
       <!-- Start with the Navigation Menu.  This will be reused for every page -->
-     <div id="navbar" class="container">
+     <div id="navbar" class="container-fluid">
         <div class="row">
             <div class="col-md-9">
                 <div class=box>
@@ -39,11 +39,48 @@
             </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container-fluid">
           <div id="MainContent" class="row">
-                <div class="col-md-12">
-                    <p>Temperature</p>
+            <div class="col-md-7 indexPage">
+                <h2>Temperature</h1>
+                <hr>
+                <div class="row">
+                    <div class="col-md-12">
+                            <img  class="visualizationView" src="resources/assets/images/LatvsTemperature.png" alt="Temperature Map">
+                    </div>
                 </div>
+                <div class="row summary">
+                    <p>As expected, the weather becomes significantly warmer as one approaches the equator (0 degrees Latitude).  More interestingly, however, is the fact that the northern hemisphere is warmer than the southern.  This is seasonal based on tilt of the earth and when the data was obtained.</p>
+                </div>
+            </div>
+            <div class="col-md-4 indexPage">
+                <h3>Visualizations</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a target="_self" href="cloudiness.html">
+                            <img  class="visuals" src="resources/assets/images/LatvsCloudiness.png" alt="Cloudy Map">
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a target="_self" href="humidity.html">
+                            <img  class="visuals" src="resources/assets/images/LatvsHumidity.png" alt="Humidity Map">
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a target="_self" href="temperature.html">
+                            <img  class="visuals" src="resources/assets/images/LatvsTemperature.png" alt="Temperature Map">
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a target="_self" href="windspeed.html">
+                            <img  class="visuals" src="resources/assets/images/LatvsWindSpeed.png" alt="Cloudy Map">
+                        </a>
+                    </div>
+                </div>
+            </div>
           </div>
       </div>
 
