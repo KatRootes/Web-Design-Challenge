@@ -1,0 +1,122 @@
+/* Main navigation bar */
+#navbar {
+    /*height:60px;*/
+    background-color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Home Link */
+.box {
+    font-weight: bold;
+    font-size:25px;
+    color:white;
+    padding: 10px 10px 10px 10px;
+    width: 140px;
+    background-color:rgb(108, 171, 192);
+}
+
+.box a {
+    color:white;   
+}
+
+/* Menu */
+.Menu {
+    position: relative;
+    display: inline-block;
+    background-color:white;
+    padding: 16px 10px 16px 10px;
+    border: none; 
+    width:85px;
+}
+
+.Menu a {
+    color:black; 
+}
+
+#MainContent {
+    background-color: whitesmoke;
+    height:500px;
+}
+
+/* START:  This section uses modified sample code from https://www.w3schools.com/howto/howto_css_dropdown.asp */
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+/* Dropdown Button */
+.dropbtn {
+    background-color:white;
+    /*padding: 16px;*/
+    border: none;   
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left:0px;
+    top:60px;
+  }
+
+  /* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: lightgray;}
+
+/* END:  This section uses modified sample code from https://www.w3schools.com/howto/howto_css_dropdown.asp */
+
+/* Menu bar hover responses */
+@media (hover:hover) {
+    
+    /* Home Link */
+    .box:hover {
+        background-color:lightgray;
+    }
+
+    .box a:hover {
+        color:white;
+        text-decoration: none;
+    }
+
+    /* Plots Menu */
+    #PlotMenu:hover {
+        background-color:lightgray;
+    }
+
+    /* Comparisons */
+    #Comparison:hover {
+        background-color:lightgray;
+    }
+
+    /* Data */
+    #Data:hover {
+        background-color:lightgray;
+    }
+
+    .Menu a:hover {
+       text-decoration:none;
+    }
+
+    .Menu:hover {
+        background-color: lightgray;
+    }
+}
