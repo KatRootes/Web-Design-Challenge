@@ -44,49 +44,21 @@
           </div>
       <div class="container-fluid">
           <div id="MainContent" class="row">
-            <div class="col-md-7 indexPage">
-                <h2>Wind Speed</h2>
+            <div class="col-md-11 indexPage">
+                <h2>Data Sources</h2>
                 <hr>
-                <div class="row">
-                    <div class="col-md-12">
-                            <img  class="visualizationView" src="resources/assets/images/LatvsWindSpeed.png" alt="Temperature Map">
-                    </div>
-                </div>
                 <div class="row summary">
-                    <p>There is no correlation between Latitude and Wind Speed.</p>
-                </div>
-            </div>
-            <div class="col-md-4 indexPage">
-                <h3>Visualizations</h3>
-                <hr>
-                <div class="row">
-                    <div class="col-md-6">
-                        <a target="_self" href="cloudiness.html">
-                            <img  class="visuals" src="resources/assets/images/LatvsCloudiness.png" alt="Cloudy Map">
-                        </a>
-                    </div>
-                    <div class="col-md-6">
-                        <a target="_self" href="humidity.html">
-                            <img  class="visuals" src="resources/assets/images/LatvsHumidity.png" alt="Humidity Map">
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <a target="_self" href="temperature.html">
-                            <img  class="visuals" src="resources/assets/images/LatvsTemperature.png" alt="Temperature Map">
-                        </a>
-                    </div>
-                    <div class="col-md-6">
-                        <a target="_self" href="windspeed.html">
-                            <img  class="visuals" src="resources/assets/images/LatvsWindSpeed.png" alt="Cloudy Map">
-                        </a>
-                    </div>
+                    <p>In order to ensure adequate coverage of the world, it was important to select cities randomly from around the world.  Using random number generation, the following latitudes and longitudes were generated.</p>
+                    <img  class="bigVisual" src="resources/assets/images/LatvsLonDisbursement_RandomNoCityYet.png" alt="Random Lat Lon Values">
+                    <p>Next, these latitudes and longitudes were passed to the OpenWeatherMap API where the nearest city was returned with the weather data if one could be found.  Plotting both the original random latitudes and longitudes vs the city matched latitudes and longitudes resulted in the following.  NOTE:  There were significantly fewer data points.</p>
+                    <img  class="bigVisual" src="resources/assets/images/LatvsLon_RandomvsActual.png" alt="Random Lat Lon Values">
+                    <p>It was observed how far away some of the random latitudes and longitudes were from found cities.  This means that OpenWeatherMap searches a long distance to find a city match.  The resulting city matches show there is good coverage of the continents and that there are no South Pole cities reporting weather to the OpenWeatherMap API.  Below the deltas between the random - city locations was plotted showing just how big some of the deltas were.</p>
+                    <img  class="bigVisual" src="resources/assets/images/LonLat_Diff.png" alt="Random Lat Lon Values">
+                    <p>Finally, here is a clean graph of the found city locations confirming that our data covers most of the world as the continents can be extrapolated by the eye.</p>
+                    <img  class="bigVisual" src="resources/assets/images/LatvsLonDisbursement_Final.png" alt="Random Lat Lon Values">                        
                 </div>
             </div>
           </div>
       </div>
-
   </body>
-
 </html>

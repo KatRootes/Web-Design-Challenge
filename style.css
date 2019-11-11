@@ -79,6 +79,12 @@ table {
     float:left;
 }
 
+.bigVisual {
+    width:600px;
+    height:auto;
+    float:right;
+}
+
 .dataTable {
     border:none;
 }
