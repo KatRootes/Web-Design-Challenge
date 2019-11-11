@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Bootstrap Visualization Dashboard</title>
+     <title>Bootstrap Visualization Dashboard</title>
   </head>
 
   <body>
@@ -48,42 +48,61 @@
                         <p>The following table includes all of the data used to graph in this project.</p>
                     </div>
                     <div class="row">
-                            <div class="col-md-12 table-responsive">
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">City</th>
-                                            <th scope="col">Cloudiness</th>
-                                            <th scope="col">Country</th>
-                                            <th scope="col">Humidity</th>
-                                            <th scope="col">Lat</th>
-                                            <th scope="col">Lon</th>
-                                            <th scope="col">Temp</th>
-                                            <th scope="col">Wind Speed</th>
-                                            <th scope="col">Latitude Random</th>
-                                            <th scope="col">Longitude Random</th>
-                                            <th scope="col">Lat Diff</th>
-                                            <th scope="col">Lon Diff</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <td>1</th>
-                                        <td>1</td>
-                                        <td>1</td>
-                                        <td>1</td>
-                                        <td>1</td>
-                                        <td>1</td>
-                                        <td>1</td>
-                                        <td>1</td>
-                                        <td>1</td>
-                                        <td>1</td>
-                                        <td>1</td>
-                                        <td>1</td>
-                                    </tbody>
-                                </table>
-                            </div>
+                        <div class="col-md-12 table-responsive">
+                            <iframe class="table table-striped dataTable" src="\Resources\cities.html" seamless></iframe>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Num</th>
+                                        <th scope="col">City</th>
+                                        <th scope="col">Cloudiness</th>
+                                        <th scope="col">Country</th>
+                                        <th scope="col">Humidity</th>
+                                        <th scope="col">Lat</th>
+                                        <th scope="col">Lon</th>
+                                        <th scope="col">Temp</th>
+                                        <th scope="col">Wind Speed</th>
+                                        <th scope="col">Latitude Random</th>
+                                        <th scope="col">Longitude Random</th>
+                                        <th scope="col">Lat Diff</th>
+                                        <th scope="col">Lon Diff</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                            <td scope="row">Num</td>
+                                            <td>City</th>
+                                            <td>Cloudiness</td>
+                                            <td>Country</td>
+                                            <td>Humidity</td>
+                                            <td>Lat</td>
+                                            <td>Lon</td>
+                                            <td>Temp</td>
+                                            <td>WindSpeed</td>
+                                            <td>LatitudeRandom</td>
+                                            <td>LongitudeRandom</td>
+                                            <td>LatDiff</td>
+                                            <td>LonDiff</td>
+                                        </tr>                                    
+                                    <tr>
+                                        <td scope="row">Num</td>
+                                        <td>City</th>
+                                        <td>Cloudiness</td>
+                                        <td>Country</td>
+                                        <td>Humidity</td>
+                                        <td>Lat</td>
+                                        <td>Lon</td>
+                                        <td>Temp</td>
+                                        <td>WindSpeed</td>
+                                        <td>LatitudeRandom</td>
+                                        <td>LongitudeRandom</td>
+                                        <td>LatDiff</td>
+                                        <td>LonDiff</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-            
+                    </div>            
                 </div>
            </div>
         </div>
