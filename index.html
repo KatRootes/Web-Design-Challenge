@@ -9,12 +9,57 @@
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <title>Bootstrap Visualization Dashboard</title>
   </head>
 
   <body>
-      <!-- Start with the Navigation Menu.  This will be reused for every page -->
+<!-- Start with the Navigation Menu.  This will be reused for every page -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="col-md-7">
+            <a class="navbar-brand" href="index.html">Latitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        
+        <div class="col-md-5">
+            <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"> <!-- active">-->
+                <div> <!--class="btn-group" role="group" aria-label="Button group with nested dropdown">-->
+<!--                    <button type="button" class="btn btn-primary">Plots</button> -->
+                    <div> <!-- class="btn-group" role="group">-->
+<!--                  <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        <div class="dropdown-content" aria-labelledby="btnGroupDrop1" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 48px, 0px);">
+-->                   <button type="button" class="dropdown btn btn-primary">Plots <!-- btn btn-primary dropdown-toggle" data-toggle="dropdown" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 48px, 0px);">Plots</button>-->
+                        <div class="dropdown-content">
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="temperature.html">Temperature</a>
+                            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                        </div>
+                        </button>
+                    </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="dataSources.html">Data Sources</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>  
+
+
+      <!-- Start with the Navigation Menu.  This will be reused for every page 
       <div id="navbar" class="container-fluid">
             <div class="row">
                 <div class="col-md-8">
@@ -41,27 +86,28 @@
                     <a href="dataSources.html">Data Sources</a>
                 </div>
                 </div>
-          </div>
-      <div class="container-fluid">
+          </div>-->
+
+      <div class="jumbotron container-fluid">
           <div id="MainContent" class="row">
-            <div class="col-md-7 indexPage">
-                <h2>Summary:  Latitude vs. X</h2>
+            <div class="col-md-7">
+                <h1>Summary:  Latitude vs. X</h1>
                 <hr>
                 <div class="row">
                     <div class="col-md-12 summary">
-                        <p>
+                        
                             <a target="_self" href="temperature.html">
                                 <img  class="mainVisual" src="resources/assets/images/LatvsTemperature.png" alt="Temperature Map">
                             </a>
-                            <p>The purpose of this project was to analyze how weather changes as you get closer to the equator.  To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
-                            <p>After assembling the data set, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: cloudiness, humidity, temperature and wind speed.  This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trend and correlations witnessed.</p>
-                            <p>Additionally, there are graphs that demonstrate the randomness of the original sample and the actual locations of cities selected.</p>
+                            <p class="lead">The purpose of this project was to analyze how weather changes as you get closer to the equator.  To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                            <p class="lead">After assembling the data set, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: cloudiness, humidity, temperature and wind speed.  This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trend and correlations witnessed.</p>
+                            <p class="lead">Additionally, there are graphs that demonstrate the randomness of the original sample and the actual locations of cities selected.</p>
                         
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 indexPage">
-                <h3>Visualizations</h3>
+            <div class="col-md-4">
+                <h1>Visualizations</h1>
                 <hr>
                 <div class="row">
                     <div class="col-md-6">

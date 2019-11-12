@@ -9,12 +9,55 @@
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <title>Bootstrap Visualization Dashboard</title>
   </head>
 
   <body>
-      <!-- Start with the Navigation Menu.  This will be reused for every page -->
+    <!-- Start with the Navigation Menu.  This will be reused for every page -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="col-md-7">
+            <a class="navbar-brand" href="index.html">Latitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        
+        <div class="col-md-5">
+            <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"> <!-- active">-->
+                <div> <!--class="btn-group" role="group" aria-label="Button group with nested dropdown">-->
+<!--                    <button type="button" class="btn btn-primary">Plots</button> -->
+                    <div> <!-- class="btn-group" role="group">-->
+<!--                  <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        <div class="dropdown-content" aria-labelledby="btnGroupDrop1" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 48px, 0px);">
+-->                   <button type="button" class="dropdown btn btn-primary">Plots <!-- btn btn-primary dropdown-toggle" data-toggle="dropdown" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 48px, 0px);">Plots</button>-->
+                        <div class="dropdown-content">
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="temperature.html">Temperature</a>
+                            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                        </div>
+                        </button>
+                    </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="dataSources.html">Data Sources</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+      <!-- Start with the Navigation Menu.  This will be reused for every page 
       <div id="navbar" class="container-fluid">
             <div class="row">
                 <div class="col-md-8">
@@ -41,21 +84,21 @@
                     <a href="dataSources.html">Data Sources</a>
                 </div>
                 </div>
-          </div>
-      <div class="container-fluid">
-          <div id="MainContent" class="row">
-            <div class="col-md-11 indexPage">
-                <h2>Data Sources</h2>
-                <hr>
-                <div class="row summary">
-                    <p>In order to ensure adequate coverage of the world, it was important to select cities randomly from around the world.  Using random number generation, the following latitudes and longitudes were generated.</p>
-                    <img  class="bigVisual" src="resources/assets/images/LatvsLonDisbursement_RandomNoCityYet.png" alt="Random Lat Lon Values">
-                    <p>Next, these latitudes and longitudes were passed to the OpenWeatherMap API where the nearest city was returned with the weather data if one could be found.  Plotting both the original random latitudes and longitudes vs the city matched latitudes and longitudes resulted in the following.  NOTE:  There were significantly fewer data points.</p>
-                    <img  class="bigVisual" src="resources/assets/images/LatvsLon_RandomvsActual.png" alt="Random Lat Lon Values">
-                    <p>It was observed how far away some of the random latitudes and longitudes were from found cities.  This means that OpenWeatherMap searches a long distance to find a city match.  The resulting city matches show there is good coverage of the continents and that there are no South Pole cities reporting weather to the OpenWeatherMap API.  Below the deltas between the random - city locations was plotted showing just how big some of the deltas were.</p>
-                    <img  class="bigVisual" src="resources/assets/images/LonLat_Diff.png" alt="Random Lat Lon Values">
-                    <p>Finally, here is a clean graph of the found city locations confirming that our data covers most of the world as the continents can be extrapolated by the eye.</p>
-                    <img  class="bigVisual" src="resources/assets/images/LatvsLonDisbursement_Final.png" alt="Random Lat Lon Values">                        
+        </div>-->
+      <div class="jumbotron">
+          <div class="container row"> <!--id="MainContent" -->
+            <div class="col-md-12"> <!--indexPage-->
+                <h1 class="display-4">Data Sources</h1>
+                <hr class="my-4">
+                <div class="row"> <!--row summary-->
+                    <p class="lead col-md-6">In order to ensure adequate coverage of the world, it was important to select cities randomly from around the world.  Using random number generation, the following latitudes and longitudes were generated.</p>
+                    <img  class="bigVisual col-md-6" src="resources/assets/images/LatvsLonDisbursement_RandomNoCityYet.png" alt="Random Lat Lon Values">
+                    <p class="lead col-md-6">Next, these latitudes and longitudes were passed to the OpenWeatherMap API where the nearest city was returned with the weather data if one could be found.  Plotting both the original random latitudes and longitudes vs the city matched latitudes and longitudes resulted in the following.  NOTE:  There were significantly fewer data points.</p>
+                    <img  class="bigVisual col-md-6" src="resources/assets/images/LatvsLon_RandomvsActual.png" alt="Random Lat Lon Values">
+                    <p class="lead col-md-6">It was observed how far away some of the random latitudes and longitudes were from found cities.  This means that OpenWeatherMap searches a long distance to find a city match.  The resulting city matches show there is good coverage of the continents and that there are no South Pole cities reporting weather to the OpenWeatherMap API.  Below the deltas between the random - city locations was plotted showing just how big some of the deltas were.</p>
+                    <img  class="bigVisual col-md-6" src="resources/assets/images/LonLat_Diff.png" alt="Random Lat Lon Values">
+                    <p class="lead col-md-6">Finally, here is a clean graph of the found city locations confirming that our data covers most of the world as the continents can be extrapolated by the eye.</p>
+                    <img  class="bigVisual col-md-6" src="resources/assets/images/LatvsLonDisbursement_Final.png" alt="Random Lat Lon Values">                        
                 </div>
             </div>
           </div>
