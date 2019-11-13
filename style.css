@@ -84,9 +84,15 @@
 }
 
 .bigVisual {
-    width:600px;
+    width:100%;
     height:auto;
-    align-content:right;
+    align-content:center;
+}
+
+.mediumVisual {
+    width:75%;
+    height:auto;
+    align-content:center;
 }
 
 /*.dataTable {
@@ -132,6 +138,25 @@
     left:0px;
     top:49px;
   }
+
+@media (max-width: 768px) {
+    .dropdown-content  {
+        top:30px;
+    }
+ }
+
+/* .highlight {
+    border-top: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-color:  #1a1a1a;
+}*/
+
+.link {
+    text-decoration: underline;
+    color:blue;
+}
 
   /* Links inside the dropdown */
 .dropdown-content a {

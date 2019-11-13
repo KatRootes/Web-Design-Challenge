@@ -19,28 +19,34 @@
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="col-md-7">
           <a class="navbar-brand" href="index.html">Latitude</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler dropdown btn btn-primary" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
+            <div class="dropdown-content">
+                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                <a class="dropdown-item" href="temperature.html">Temperature</a>
+                <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                <a class="dropdown-item" href="comparison.html">Comparison</a>
+                <a class="dropdown-item" href="data.html">Data</a>
+                <a class="dropdown-item" href="dataSources.html">Data Sources</a>
+            </div>
           </button>
         </div>
       
         <div class="col-md-5">
           <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item"> <!-- active">-->
-                <div> <!--class="btn-group" role="group" aria-label="Button group with nested dropdown">-->
-<!--                    <button type="button" class="btn btn-primary">Plots</button> -->
-                    <div> <!-- class="btn-group" role="group">-->
-<!--                  <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-                      <div class="dropdown-content" aria-labelledby="btnGroupDrop1" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 48px, 0px);">
--->                   <button type="button" class="dropdown btn btn-primary">Plots <!-- btn btn-primary dropdown-toggle" data-toggle="dropdown" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 48px, 0px);">Plots</button>-->
+              <li class="nav-item">
+                <div> 
+                    <div>
+                    <button type="button" class="dropdown btn btn-primary">Plots
                       <div class="dropdown-content">
                           <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
                           <a class="dropdown-item" href="humidity.html">Humidity</a>
                           <a class="dropdown-item" href="temperature.html">Temperature</a>
                           <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
                       </div>
-                      </button>
+                     </button>
                     </div>
                   </div>
               </li>
@@ -58,48 +64,18 @@
         </div>
       </nav>
 
-<!--
-      <div id="navbar" class="container-fluid">
-        <div class="row">
-            <div class="col-md-8">
-                <div class=box>
-                    <a href="index.html">Latitude</a>
-                </div>
-            </div>
-            <div class="col-md-1 Menu dropdown">
-                <button class="dropbtn" id="PlotMenu">Plots</button>
-                <div class="dropdown-content">
-                    <a href="cloudiness.html">Cloudiness</a>
-                    <a href="humidity.html">Humidity</a>
-                    <a href="temperature.html">Temperature</a>
-                    <a href="windspeed.html">Wind Speed</a>
-                </div>
-            </div>
-            <div class="col-md-1 Menu">
-                <a href="comparison.html">Comparison</a>
-            </div>
-            <div class="col-md-1 Menu">
-                <a href="data.html">Data</a>
-            </div>
-            <div class="col-md-1 Menu">
-                <a href="dataSources.html">Data Sources</a>
-            </div>
-            </div>
-      </div>
-    -->
-      <div> <!-- id="MainContent"> -->
-           <!--<div id="MainContent" class="row">-->
-          <div class=" row jumbotron jumbotron-fluid">
-                <div class="col-md-10 container container-fluid">  <!-- class="col-md-12  dataPage"  -->
+      <div> 
+          <div class="row jumbotron jumbotron-fluid">
+                <div class="col-md-10 container container-fluid"> 
                     <h1 class="display-4">Data</h1>
                     <hr class="my-4">
                     <div class="dataText">
-                        <p>The following table includes all of the data used to graph the weather data in this project.</p>
+                        <p class="lead text-primary">The following table includes all of the data used to graph the weather data in this project.</p>
                     </div>
-                    <div> <!--  class="row" -->
-                        <div> <!-- class="table-hover table-responsive" col-md-8 -->
+                    <div> 
+                        <div class="scroll">
                             <!--<iframe class="table table-striped dataTable" src="/Resources/cities.html"></iframe>-->
-                            <table class="row table table-striped table-hover table-responsive"> <!--{-sm|-md|-lg|-xl}-->
+                            <table class="row col-md-12 table table-striped table-hover table-responsive text-primary"> <!--{-sm|-md|-lg|-xl}-->
                                     <thead>
                                       <tr style="text-align: left;">
                                         <th>ID</th>
@@ -119,7 +95,7 @@
                                     </thead>
                                     <tbody>
                                       <tr>  <!--class="row col-md-11" style="margin:0px; padding:0px;"-->
-                                        <th>0</th>
+                                        <th scope="row">0</th>
                                         <td>Sioux Lookout</td>
                                         <td>40.0</td>
                                         <td>CA</td>
@@ -134,7 +110,7 @@
                                         <td>0.981697</td>
                                       </tr>
                                       <tr>
-                                        <th>1</th>
+                                        <th scope="row">1</th>
                                         <td>Arraial do Cabo</td>
                                         <td>100.0</td>
                                         <td>BR</td>

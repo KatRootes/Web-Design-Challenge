@@ -15,121 +15,94 @@
   </head>
 
   <body>
-    <!-- Start with the Navigation Menu.  This will be reused for every page -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="col-md-7">
-            <a class="navbar-brand" href="index.html">Latitude</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-        
-        <div class="col-md-5">
-            <div class="collapse navbar-collapse" id="navbarColor02">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item"> <!-- active">-->
-                <div> <!--class="btn-group" role="group" aria-label="Button group with nested dropdown">-->
-<!--                    <button type="button" class="btn btn-primary">Plots</button> -->
-                    <div> <!-- class="btn-group" role="group">-->
-<!--                  <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-                        <div class="dropdown-content" aria-labelledby="btnGroupDrop1" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 48px, 0px);">
--->                   <button type="button" class="dropdown btn btn-primary">Plots <!-- btn btn-primary dropdown-toggle" data-toggle="dropdown" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 48px, 0px);">Plots</button>-->
-                        <div class="dropdown-content">
-                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                            <a class="dropdown-item" href="humidity.html">Humidity</a>
-                            <a class="dropdown-item" href="temperature.html">Temperature</a>
-                            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
-                        </div>
-                        </button>
-                    </div>
-                    </div>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="comparison.html">Comparison</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="data.html">Data</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="dataSources.html">Data Sources</a>
-                </li>
-            </ul>
-            </div>
-        </div>
-    </nav>  
-
-      <!-- Start with the Navigation Menu.  This will be reused for every page 
-      <div id="navbar" class="container-fluid">
-        <div class="row">
-            <div class="col-md-8">
-                <div class=box>
-                    <a href="index.html">Latitude</a>
-                </div>
-            </div>
-            <div class="col-md-1 Menu dropdown">
-                <button class="dropbtn" id="PlotMenu">Plots</button>
+      <!-- Start with the Navigation Menu.  This will be reused for every page -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="col-md-7">
+              <a class="navbar-brand" href="index.html">Latitude</a>
+              <button class="navbar-toggler dropdown btn btn-primary" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
                 <div class="dropdown-content">
-                    <a href="cloudiness.html">Cloudiness</a>
-                    <a href="humidity.html">Humidity</a>
-                    <a href="temperature.html">Temperature</a>
-                    <a href="windspeed.html">Wind Speed</a>
+                    <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                    <a class="dropdown-item" href="humidity.html">Humidity</a>
+                    <a class="dropdown-item" href="temperature.html">Temperature</a>
+                    <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                    <a class="dropdown-item" href="comparison.html">Comparison</a>
+                    <a class="dropdown-item" href="data.html">Data</a>
+                    <a class="dropdown-item" href="dataSources.html">Data Sources</a>
                 </div>
+              </button>
             </div>
-            <div class="col-md-1 Menu">
-                <a href="comparison.html">Comparison</a>
+          
+            <div class="col-md-5">
+              <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <div> 
+                        <div>
+                        <button type="button" class="dropdown btn btn-primary">Plots
+                          <div class="dropdown-content">
+                              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                              <a class="dropdown-item" href="humidity.html">Humidity</a>
+                              <a class="dropdown-item" href="temperature.html">Temperature</a>
+                              <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                          </div>
+                         </button>
+                        </div>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="comparison.html">Comparison</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="dataSources.html">Data Sources</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="col-md-1 Menu">
-                <a href="data.html">Data</a>
-            </div>
-            <div class="col-md-1 Menu">
-                <a href="dataSources.html">Data Sources</a>
-            </div>
-            </div>
-          </div>-->
+          </nav>
 
-
-
-      <div class="jumbotron container-fluid">
-          <div id="MainContent" class="row">
-            <div class="col-md-12"> <!--indexPage-->
-                <h1>Comparison: Latitude vs. X</h1>
+      <div class="container-fluid">
+          <div class="jumbotron row">
+            <div class="col-md-12"> 
+                <h1 class="display-4">Comparison: Latitude vs. X</h1>
                 <hr>
-                <p>Click on any plot to get an in-depth analysis.</p>
+                <p class="lead text-primary">Click on any plot to get an in-depth analysis.</p>
                 <br>
                 <div class="row comparisons">
-                    <div class="col-md-6">
-                        <h4>vs. Cloudiness</h4>
+                    <div class="col-md-6 col-12">
+                        <h3>vs. Cloudiness</h3>
                         <a target="_self" href="cloudiness.html">
-                            <img  class="visuals" src="resources/assets/images/LatvsCloudiness.png" alt="Cloudy Map">
+                            <img  class="mediumVisual" src="resources/assets/images/LatvsCloudiness.png" alt="Cloudy Map">
                         </a>
                     </div>
-                    <div class="col-md-6">
-                        <h4>vs. Humidity</h4>
+                    <div class="col-md-6 col-12">
+                        <h3>vs. Humidity</h3>
                         <a target="_self" href="humidity.html">
-                            <img  class="visuals" src="resources/assets/images/LatvsHumidity.png" alt="Humidity Map">
+                            <img  class="mediumVisual" src="resources/assets/images/LatvsHumidity.png" alt="Humidity Map">
                         </a>
                     </div>
                 </div>
                 <br>
                 <br>
                 <div class="row comparisons">
-                    <div class="col-md-6">
-                        <h4>vs. Temperature</h4>
+                    <div class="col-md-6 col-12">
+                        <h3>vs. Temperature</h3>
                         <a target="_self" href="temperature.html">
-                            <img  class="visuals" src="resources/assets/images/LatvsTemperature.png" alt="Temperature Map">
+                            <img  class="mediumVisual" src="resources/assets/images/LatvsTemperature.png" alt="Temperature Map">
                         </a>
                     </div>
-                    <div class="col-md-6">
-                        <h4>vs. Wind Speed</h4>
+                    <div class="col-md-6 col-12">
+                        <h3>vs. Wind Speed</h3>
                         <a target="_self" href="windspeed.html">
-                            <img  class="visuals" src="resources/assets/images/LatvsWindSpeed.png" alt="Cloudy Map">
+                            <img  class="mediumVisual" src="resources/assets/images/LatvsWindSpeed.png" alt="Cloudy Map">
                         </a>
                     </div>
                 </div>
             </div>
           </div>
       </div>
-
   </body>
-
 </html>
