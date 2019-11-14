@@ -2,111 +2,111 @@
 
 <html lang="en">
 
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- Bootstrap CSS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- Additional Styling-->
     <link rel="stylesheet" href="style.css">
     <title>Bootstrap Visualization Dashboard</title>
   </head>
-
+  
   <body>
-      <!-- Start with the Navigation Menu.  This will be reused for every page -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="col-md-7">
-              <a class="navbar-brand" href="index.html">Latitude</a>
-              <button class="navbar-toggler dropdown btn btn-primary" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                <div class="dropdown-content">
-                    <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                    <a class="dropdown-item" href="humidity.html">Humidity</a>
-                    <a class="dropdown-item" href="temperature.html">Temperature</a>
-                    <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
-                    <a class="dropdown-item" href="comparison.html">Comparison</a>
-                    <a class="dropdown-item" href="data.html">Data</a>
-                    <a class="dropdown-item" href="dataSources.html">Data Sources</a>
-                </div>
-              </button>
-            </div>
-          
-            <div class="col-md-5">
-              <div class="collapse navbar-collapse" id="navbarColor02">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item">
-                    <div> 
-                        <div>
-                        <button type="button" class="dropdown btn btn-primary">Plots
-                          <div class="dropdown-content">
-                              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                              <a class="dropdown-item" href="humidity.html">Humidity</a>
-                              <a class="dropdown-item" href="temperature.html">Temperature</a>
-                              <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
-                          </div>
-                         </button>
-                        </div>
-                      </div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="comparison.html">Comparison</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="data.html">Data</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="dataSources.html">Data Sources</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+    <!-- Navigation Menu / Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    
+    <!-- Home Link -->
+    <div class="col-8">
+      <a class="navbar-brand" href="index.html">Latitude</a>
+    </div>
 
-      <div class="jumbotron container-fluid">
-          <div class="row">
-            <div class="col-md-7">
-                <h1 class="display-4">Cloudiness</h1>
-                <hr>
-                <div class="row">
-                    <div class="col-md-12">
-                        <img  class="visualizationView" src="resources/assets/images/LatvsCloudiness.png" alt="Temperature Map">
-                    </div>
-                </div>
-                <div class="row summary">
-                    <p class="lead text-primary">As expected, there is no correlation between latitude and cloudiness.  However, it is interesting to see "lines" which could indicate that some weather stations use less precision when reporting cloudiness.</p>
-                </div>
+    <!-- Right Justified Menu Options -->
+    <div class="col-4">
+
+      <!-- Drop Down Menu -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>        
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="humidity.html">Humidity</a>
+              <a class="dropdown-item" href="temperature.html">Temperature</a>
+              <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
             </div>
-            <div class="col-md-4">
-                <h1 class="display-4">Visualizations</h1>
-                <hr>
-                <div class="row">
-                    <div class="col-md-6">
-                        <a target="_self" href="cloudiness.html">
-                            <img  class="visuals highlight" src="resources/assets/images/LatvsCloudiness.png" alt="Cloudy Map">
-                        </a>
-                    </div>
-                    <div class="col-md-6">
-                        <a target="_self" href="humidity.html">
-                            <img  class="visuals" src="resources/assets/images/LatvsHumidity.png" alt="Humidity Map">
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <a target="_self" href="temperature.html">
-                            <img  class="visuals" src="resources/assets/images/LatvsTemperature.png" alt="Temperature Map">
-                        </a>
-                    </div>
-                    <div class="col-md-6">
-                        <a target="_self" href="windspeed.html">
-                            <img  class="visuals" src="resources/assets/images/LatvsWindSpeed.png" alt="Cloudy Map">
-                        </a>
-                    </div>
-                </div>
-            </div>
-          </div>
+          </li>
+
+          <!-- Simple Menu Links -->
+          <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dataSources.html">Data Sources</a>
+          </li>
+        </ul>
       </div>
+    </div>
+  </nav>
+
+  <div class="row">
+    <!-- Primary Visualization -->
+    <div class="jumbotron col-12 col-md-7">
+      <div class="container">
+        <h1 class="sectionHeader">Cloudiness</h1>
+        <hr class="my-4">
+        <p class="lead">
+          <img  class="visualizationView" src="resources/assets/images/LatvsCloudiness.png" alt="Cloudy Map">
+          <p class="lead text-primary">As expected, there is no correlation between latitude and cloudiness.  However, it is interesting to see "lines" which could indicate that some weather stations use less precision when reporting cloudiness.</p>
+        </p>
+      </div>
+    </div>
+    <!-- Visualization Overview and Links -->
+    <div class="jumbotron col-12 col-md-5">
+      <div class="container">
+        <h1 class="sectionHeader">Visualizations</h1>
+        <hr class="my-4">
+        <p></p>
+        <div class="row">
+        <div class="col-12 col-md-6">
+            <a target="_self" href="cloudiness.html">
+                <img  class="visuals highlight" src="resources/assets/images/LatvsCloudiness.png" alt="Cloudy Map">
+            </a>
+        </div>
+          <div class="col-md-6">
+              <a target="_self" href="humidity.html">
+                  <img class="visuals" src="resources/assets/images/LatvsHumidity.png" alt="Humidity Map">
+              </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+              <a target="_self" href="temperature.html">
+                  <img  class="visuals" src="resources/assets/images/LatvsTemperature.png" alt="Temperature Map">
+              </a>
+          </div>
+          <div class="col-md-6">
+              <a target="_self" href="windspeed.html">
+                  <img  class="visuals" src="resources/assets/images/LatvsWindSpeed.png" alt="Cloudy Map">
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

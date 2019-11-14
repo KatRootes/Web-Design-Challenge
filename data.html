@@ -2,62 +2,51 @@
 
 <html lang="en">
 
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- Bootstrap CSS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" href="style.css">
-     <title>Bootstrap Visualization Dashboard</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Bootstrap Visualization Dashboard</title>
   </head>
 
   <body>
-      <!-- Start with the Navigation Menu.  This will be reused for every page -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="col-md-7">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="col-8">
           <a class="navbar-brand" href="index.html">Latitude</a>
-          <button class="navbar-toggler dropdown btn btn-primary" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            <div class="dropdown-content">
-                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                <a class="dropdown-item" href="humidity.html">Humidity</a>
-                <a class="dropdown-item" href="temperature.html">Temperature</a>
-                <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
-                <a class="dropdown-item" href="comparison.html">Comparison</a>
-                <a class="dropdown-item" href="data.html">Data</a>
-                <a class="dropdown-item" href="dataSources.html">Data Sources</a>
-            </div>
-          </button>
         </div>
-      
-        <div class="col-md-5">
-          <div class="collapse navbar-collapse" id="navbarColor02">
+        <div class="col-4">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <div> 
-                    <div>
-                    <button type="button" class="dropdown btn btn-primary">Plots
-                      <div class="dropdown-content">
-                          <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                          <a class="dropdown-item" href="humidity.html">Humidity</a>
-                          <a class="dropdown-item" href="temperature.html">Temperature</a>
-                          <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
-                      </div>
-                     </button>
-                    </div>
-                  </div>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                  <a class="dropdown-item" href="humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="temperature.html">Temperature</a>
+                  <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="comparison.html">Comparison</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="data.html">Data</a>
+                <a class="nav-link active" href="data.html">Data</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="dataSources.html">Data Sources</a>
+                <a class="nav-link" href="dataSources.html">Data Sources<span class="sr-only">(current)</span></a>
               </li>
             </ul>
           </div>
@@ -65,18 +54,17 @@
       </nav>
 
       <div> 
-          <div class="row jumbotron jumbotron-fluid">
-                <div class="col-md-10 container container-fluid"> 
+          <div class="jumbotron col-8 col-md-12">
+                <div class="container-fluid"> 
                     <h1 class="display-4">Data</h1>
                     <hr class="my-4">
                     <div class="dataText">
                         <p class="lead text-primary">The following table includes all of the data used to graph the weather data in this project.</p>
                     </div>
-                    <div> 
-                        <div class="scroll">
-                            <!--<iframe class="table table-striped dataTable" src="/Resources/cities.html"></iframe>-->
-                            <table class="row col-md-12 table table-striped table-hover table-responsive text-primary"> <!--{-sm|-md|-lg|-xl}-->
-                                    <thead>
+                    <div class="row"> 
+                        <div class="scroll col-8 col-12">
+                            <table class="rowtable table-sm table-striped table-hover table-responsive text-primary"> <!--{-sm|-md|-lg|-xl}-->
+                                    <thead class="thead-dark">
                                       <tr style="text-align: left;">
                                         <th>ID</th>
                                         <th>City</th>
@@ -94,7 +82,7 @@
                                       </tr>
                                     </thead>
                                     <tbody>
-                                      <tr>  <!--class="row col-md-11" style="margin:0px; padding:0px;"-->
+                                      <tr>  
                                         <th scope="row">0</th>
                                         <td>Sioux Lookout</td>
                                         <td>40.0</td>

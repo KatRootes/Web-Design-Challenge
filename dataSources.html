@@ -2,122 +2,101 @@
 
 <html lang="en">
 
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- Bootstrap CSS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <title>Bootstrap Visualization Dashboard</title>
   </head>
 
   <body>
-      <!-- Start with the Navigation Menu.  This will be reused for every page -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="col-md-7">
-              <a class="navbar-brand" href="index.html">Latitude</a>
-              <button class="navbar-toggler dropdown btn btn-primary" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                <div class="dropdown-content">
-                    <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                    <a class="dropdown-item" href="humidity.html">Humidity</a>
-                    <a class="dropdown-item" href="temperature.html">Temperature</a>
-                    <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
-                    <a class="dropdown-item" href="comparison.html">Comparison</a>
-                    <a class="dropdown-item" href="data.html">Data</a>
-                    <a class="dropdown-item" href="dataSources.html">Data Sources</a>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="col-8">
+          <a class="navbar-brand" href="index.html">Latitude</a>
+        </div>
+        <div class="col-4">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                  <a class="dropdown-item" href="humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="temperature.html">Temperature</a>
+                  <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
                 </div>
-              </button>
-            </div>
-          
-            <div class="col-md-5">
-              <div class="collapse navbar-collapse" id="navbarColor02">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item">
-                    <div> 
-                        <div>
-                        <button type="button" class="dropdown btn btn-primary">Plots
-                          <div class="dropdown-content">
-                              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                              <a class="dropdown-item" href="humidity.html">Humidity</a>
-                              <a class="dropdown-item" href="temperature.html">Temperature</a>
-                              <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
-                          </div>
-                         </button>
-                        </div>
-                      </div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="comparison.html">Comparison</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="data.html">Data</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="dataSources.html">Data Sources</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-
-      <div class="container">
-          <div class="jumbotron row col-md-12"> 
-            <div class="col-md-1"> 
-            </div>
-            <div class="col-md-10">
-                <h1 class="display-4">Data Sources</h1>
-                <hr class="my-4">
-                <div class="row"> 
-                    <div class="card mb-3 col-md-12">
-                        <h2 class="card-header">Step 1: Randomized Data</h2>
-                        <div class="card-body">
-                            <h4 class="card-title">Latitudes and Longitudes</h4>
-                        </div>
-                        <div class="card-body">
-                            <p class="lead">In order to ensure adequate coverage of the world, it was important to select cities randomly from around the world.  Using random number generation, the following latitudes and longitudes were generated.</p>
-                            <img  class="bigVisual" src="resources/assets/images/LatvsLonDisbursement_RandomNoCityYet.png" alt="Random Lat Lon Values">
-                        </div>
-                    </div>
-
-                    <div class="card mb-3 col-md-12">
-                        <h2 class="card-header">Step 2: Identify Cities</h2>
-                        <div class="card-body">
-                            <h4 class="card-title">Utilize the <a class="link" target="_blank" href="https://openweathermap.org/">OpenWeatherMap API</a></h4>
-                        </div>
-                        <div class="card-body">
-                            <p class="lead">Next, these latitudes and longitudes were passed to the <a class="link" target="_blank" href="https://openweathermap.org/">OpenWeatherMap API</a> where the nearest city was returned with the weather data if one could be found.  Plotting both the original random latitudes and longitudes vs the city matched latitudes and longitudes resulted in the following.  NOTE:  There were significantly fewer data points.</p>
-                            <img  class="bigVisual" src="resources/assets/images/LatvsLon_RandomvsActual.png" alt="Random vs. City Locations">
-                        </div>
-                    </div>
-
-                    <div class="card mb-3 col-md-12">
-                        <h2 class="card-header">Step 3: Review the Deltas</h2>
-                        <div class="card-body">
-                            <h4 class="card-title">Random locations vs. actual city locations.</h4>
-                        </div>
-                        <div class="card-body">
-                            <p class="lead">It was observed how far away some of the random latitudes and longitudes were from found cities.  This means that OpenWeatherMap searches a long distance to find a city match.  The resulting city matches show there is good coverage of the continents and that there are no South Pole cities reporting weather to the OpenWeatherMap API.  Below the deltas between the random - city locations was plotted showing just how big some of the deltas were.</p>
-                            <img  class="bigVisual" src="resources/assets/images/LonLat_Diff.png" alt="Random vs. City Deltas">
-                        </div>
-                    </div>
-
-                    <div class="card mb-3 col-md-12">
-                        <h2 class="card-header">Step 4: Cities Used</h2>
-                        <div class="card-body">
-                            <h4 class="card-title">City coverage of the world.</h4>
-                        </div>
-                        <div class="card-body">
-                            <p class="lead">Finally, here is a clean graph of the found city locations confirming that our data covers most of the world as the continents can be extrapolated by the eye.</p>
-                            <img  class="bigVisual" src="resources/assets/images/LatvsLonDisbursement_Final.png" alt="City Locations Around the World">
-                        </div>
-                    </div>
-                </div>
-            </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="comparison.html">Comparison</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="dataSources.html">Data Sources<span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
           </div>
+        </div>
+      </nav>
+
+      <div class="jumbotron col-12 col-md-12">
+        <div class="container"> 
+          <h1 class="display-4">Data Sources</h1>
+          <hr class="my-4">
+          <div class="row"> 
+            
+              <div class="card mb-3 col-12 col-md-6">
+                  <h2 class="card-header">Step 1: Randomize Data</h2>
+                  <div class="card-body">
+                      <h4 class="card-title">Latitudes and Longitudes</h4>
+                      <img  class="visuals col-12" src="resources/assets/images/LatvsLonDisbursement_RandomNoCityYet.png" alt="Random Lat Lon Values">
+                      <p class="lead">In order to ensure adequate coverage of the world, it was important to select cities randomly from around the world.  Using random number generation, the following latitudes and longitudes were generated.</p>
+                  </div>
+              </div>
+
+              <div class="card mb-3 col-12 col-md-6">
+                  <h2 class="card-header">Step 2: Identify Cities</h2>
+                  <div class="card-body">
+                      <h4 class="card-title">Utilize the <a class="link" target="_blank" href="https://openweathermap.org/">OpenWeatherMap API</a></h4>
+                      <img  class="visuals col-12" src="resources/assets/images/LatvsLon_RandomvsActual.png" alt="Random vs. City Locations">
+                      <p class="lead">Next, these latitudes and longitudes were passed to the <a class="link" target="_blank" href="https://openweathermap.org/">OpenWeatherMap API</a> where the nearest city was returned with the weather data if one could be found.  Plotting both the original random latitudes and longitudes vs the city matched latitudes and longitudes resulted in the following.  NOTE:  There were significantly fewer data points.</p>
+                  </div>
+              </div>
+
+              <div class="card mb-3 col-12 col-md-6">
+                  <h2 class="card-header">Step 3: Review the Deltas</h2>
+                  <div class="card-body">
+                      <h4 class="card-title">Random vs. actual locations.</h4>
+                      <img  class="visuals col-12" src="resources/assets/images/LonLat_Diff.png" alt="Random vs. City Deltas">
+                      <p class="lead">It was observed how far away some of the random latitudes and longitudes were from found cities.  This means that OpenWeatherMap searches a long distance to find a city match.  The resulting city matches show there is good coverage of the continents and that there are no South Pole cities reporting weather to the OpenWeatherMap API.  Below the deltas between the random - city locations was plotted showing just how big some of the deltas were.</p>
+                  </div>
+              </div>
+
+              <div class="card mb-3 col-12 col-md-6">
+                  <h2 class="card-header">Step 4: Display Cities</h2>
+                  <div class="card-body">
+                      <h4 class="card-title">City coverage of the world.</h4>
+                      <img  class="visuals col-12" src="resources/assets/images/LatvsLonDisbursement_Final.png" alt="City Locations Around the World">
+                      <p class="lead">Finally, here is a clean graph of the found city locations confirming that our data covers most of the world as the continents can be extrapolated by the eye.</p>
+                  </div>
+              </div>
+
+          </div>
+        </div>
       </div>
   </body>
 </html>
