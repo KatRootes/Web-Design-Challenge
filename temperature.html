@@ -23,87 +23,85 @@
     <!-- Navigation Menu / Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     
-    <!-- Home Link -->
-    <div class="col-8">
-      <a class="navbar-brand" href="index.html">Latitude</a>
-    </div>
-
-    <!-- Right Justified Menu Options -->
-    <div class="col-4">
-
-      <!-- Drop Down Menu -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>        
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Plots
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-              <a class="dropdown-item" href="humidity.html">Humidity</a>
-              <a class="dropdown-item" href="temperature.html">Temperature</a>
-              <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
-            </div>
-          </li>
-
-          <!-- Simple Menu Links -->
-          <li class="nav-item">
-            <a class="nav-link" href="comparison.html">Comparison</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="data.html">Data</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="dataSources.html">Data Sources</a>
-          </li>
-        </ul>
+      <!-- Home Link -->
+      <div class="col-8">
+        <a class="navbar-brand" href="index.html">Latitude</a>
       </div>
-    </div>
-  </nav>
 
-  <div class="row">
-    <!-- Primary Visualization -->
-    <div class="jumbotron col-12 col-md-7">
-      <div class="container">
-        <h1 class="sectionHeader">Temperature</h1>
-        <hr class="my-4">
-        <p class="lead">
+      <!-- Right Justified Menu Options -->
+      <div class="col-4">
+
+        <!-- Drop Down Menu -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                <a class="dropdown-item" href="temperature.html">Temperature</a>
+                <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+              </div>
+            </li>
+
+            <!-- Simple Menu Links -->
+            <li class="nav-item">
+              <a class="nav-link" href="comparison.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dataSources.html">Data Sources</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row">
+      <!-- Primary Visualization -->
+      <div class="jumbotron col-12 col-md-7">
+        <div class="container">
+          <h1 class="sectionHeader">Temperature</h1>
+          <hr class="my-4">
           <img  class="visualizationView" src="resources/assets/images/LatvsTemperature.png" alt="Temperature Map">
           <p class="lead text-primary">As expected, the weather becomes significantly warmer as one approaches the equator (0 degrees Latitude).  More interestingly, however, is the fact that the northern hemisphere is warmer than the southern.  This is seasonal based on tilt of the earth and when the data was obtained.</p>
-        </p>
+        </div>
       </div>
-    </div>
-    <!-- Visualization Overview and Links -->
-    <div class="jumbotron col-12 col-md-5">
-      <div class="container">
-        <h1 class="sectionHeader">Visualizations</h1>
-        <hr class="my-4">
-        <p></p>
-        <div class="row">
-        <div class="col-12 col-md-6">
-            <a target="_self" href="cloudiness.html">
-                <img  class="visuals" src="resources/assets/images/LatvsCloudiness.png" alt="Cloudy Map">
-            </a>
-        </div>
-          <div class="col-md-6">
-              <a target="_self" href="humidity.html">
-                  <img class="visuals" src="resources/assets/images/LatvsHumidity.png" alt="Humidity Map">
-              </a>
-          </div>
-        </div>
-        <div class="row">
+      <!-- Visualization Overview and Links -->
+      <div class="jumbotron col-12 col-md-5">
+        <div class="container">
+          <h1 class="sectionHeader">Visualizations</h1>
+          <hr class="my-4">
+          <div class="row">
           <div class="col-12 col-md-6">
-              <a target="_self" href="temperature.html">
-                  <img  class="visuals highlight" src="resources/assets/images/LatvsTemperature.png" alt="Temperature Map">
+              <a target="_self" href="cloudiness.html">
+                  <img  class="visuals" src="resources/assets/images/LatvsCloudiness.png" alt="Cloudy Map">
               </a>
           </div>
-          <div class="col-md-6">
-              <a target="_self" href="windspeed.html">
-                  <img  class="visuals" src="resources/assets/images/LatvsWindSpeed.png" alt="Cloudy Map">
-              </a>
+            <div class="col-md-6">
+                <a target="_self" href="humidity.html">
+                    <img class="visuals" src="resources/assets/images/LatvsHumidity.png" alt="Humidity Map">
+                </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6">
+                <a target="_self" href="temperature.html">
+                    <img  class="visuals highlight" src="resources/assets/images/LatvsTemperature.png" alt="Temperature Map">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a target="_self" href="windspeed.html">
+                    <img  class="visuals" src="resources/assets/images/LatvsWindSpeed.png" alt="Cloudy Map">
+                </a>
+            </div>
           </div>
         </div>
       </div>

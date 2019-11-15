@@ -11,6 +11,7 @@
  .mainVisual {
     width: 50%;;
     height:auto;
+    float: left;
 }
 
 .visualizationView {
