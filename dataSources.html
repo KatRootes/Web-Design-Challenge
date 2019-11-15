@@ -78,7 +78,7 @@
               <h2 class="card-header">Step 1: Randomize Data</h2>
               <div class="card-body">
                   <h4 class="card-title">Latitudes and Longitudes</h4>
-                  <img  class="visuals col-12" src="resources/assets/images/LatvsLonDisbursement_RandomNoCityYet.png" alt="Random Lat Lon Values">
+                  <img  class="visuals col-12" src="Resources/assets/images/LatvsLonDisbursement_RandomNoCityYet.png" alt="Random Lat Lon Values">
                   <p class="lead">In order to ensure adequate coverage of the world, it was important to select cities randomly from around the world.  Using random number generation, the following latitudes and longitudes were generated.</p>
               </div>
           </div>
@@ -87,7 +87,7 @@
               <h2 class="card-header">Step 2: Identify Cities</h2>
               <div class="card-body">
                   <h4 class="card-title">Utilize the <a class="link" target="_blank" href="https://openweathermap.org/">OpenWeatherMap API</a></h4>
-                  <img  class="visuals col-12" src="resources/assets/images/LatvsLon_RandomvsActual.png" alt="Random vs. City Locations">
+                  <img  class="visuals col-12" src="Resources/assets/images/LatvsLon_RandomvsActual.png" alt="Random vs. City Locations">
                   <p class="lead">Next, these latitudes and longitudes were passed to the <a class="link" target="_blank" href="https://openweathermap.org/">OpenWeatherMap API</a> where the nearest city was returned with the weather data if one could be found.  Plotting both the original random latitudes and longitudes vs the city matched latitudes and longitudes resulted in the following.  NOTE:  There were significantly fewer data points.</p>
               </div>
           </div>
@@ -96,7 +96,7 @@
               <h2 class="card-header">Step 3: Review the Deltas</h2>
               <div class="card-body">
                   <h4 class="card-title">Random vs. actual locations.</h4>
-                  <img  class="visuals col-12" src="resources/assets/images/LonLat_Diff.png" alt="Random vs. City Deltas">
+                  <img  class="visuals col-12" src="Resources/assets/images/LonLat_Diff.png" alt="Random vs. City Deltas">
                   <p class="lead">It was observed how far away some of the random latitudes and longitudes were from found cities.  This means that OpenWeatherMap searches a long distance to find a city match.  The resulting city matches show there is good coverage of the continents and that there are no South Pole cities reporting weather to the OpenWeatherMap API.  Below the deltas between the random - city locations was plotted showing just how big some of the deltas were.</p>
               </div>
           </div>
@@ -105,7 +105,7 @@
               <h2 class="card-header">Step 4: Display Cities</h2>
               <div class="card-body">
                   <h4 class="card-title">City coverage of the world.</h4>
-                  <img  class="visuals col-12" src="resources/assets/images/LatvsLonDisbursement_Final.png" alt="City Locations Around the World">
+                  <img  class="visuals col-12" src="Resources/assets/images/LatvsLonDisbursement_Final.png" alt="City Locations Around the World">
                   <p class="lead">Finally, here is a clean graph of the found city locations confirming that our data covers most of the world as the continents can be extrapolated by the eye.</p>
               </div>
           </div>
